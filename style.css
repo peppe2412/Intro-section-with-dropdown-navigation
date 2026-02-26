@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+.display-none {
+  display: none;
+}
+
 header {
   display: flex;
   padding: 2rem;
@@ -38,6 +42,7 @@ li {
 
 .dropdown {
   cursor: pointer;
+  position: relative;
 }
 
 .dropdown:active {
@@ -46,6 +51,41 @@ li {
 
 .dropdown > span {
   margin-left: 5px;
+}
+
+.dropdown-content{
+  background-color: white;
+  position: absolute;
+  box-shadow: 1px 11px 20px -9px var(--gray-500);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.dropdown-content > ul{
+  padding: 0;
+  margin-top: 5px;
+}
+
+.dropdown-content > ul > li{
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.dropdown-content > ul > li:hover{
+  text-decoration: underline;
+}
+
+.dropdown-content > ul > li > span{
+  margin-right: 15px;
+}
+
+#features-dropdown-content{
+  top: 5.25rem;
+  left: 100px;
+}
+
+#company-dropdown-content{
+  top: 5.25rem;
 }
 
 .nav-links {
