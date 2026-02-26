@@ -22,6 +22,111 @@
     />
   </head>
   <body>
+    <!-- sidebar -->
+    <div id="overlay" class="display-none"></div>
+
+    <aside>
+      <div class="close-menu-box">
+        <img src="images/icon-close-menu.svg" alt="icon-close-menu" />
+      </div>
+      <div style="margin-top: 50px">
+        <ul class="list-nav">
+          <li>
+            <div id="features-dropdown-sidebar">
+              Features
+              <span>
+                <img
+                  class="features-arrow-down-sidebar"
+                  src="/images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                />
+                <img
+                  class="display-none features-arrow-up-sidebar"
+                  src="/images/icon-arrow-up.svg"
+                  alt="Arrow up"
+                />
+              </span>
+            </div>
+            <div id="dropdown-sidebar-content-features">
+              <ul>
+                <li>
+                  <span
+                    ><object data="images/icon-todo.svg" type="image/svg+xml">
+                      Icon todo
+                    </object></span
+                  >
+                  Todo list
+                </li>
+                <li>
+                  <span
+                    ><object
+                      data="images/icon-calendar.svg"
+                      type="image/svg+xml"
+                    >
+                      Icon calendar
+                    </object></span
+                  >
+                  Calendar
+                </li>
+                <li>
+                  <span
+                    ><object
+                      data="images/icon-reminders.svg"
+                      type="image/svg+xml"
+                    >
+                      Icon reminders
+                    </object></span
+                  >
+                  Reminders
+                </li>
+                <li>
+                  <span
+                    ><object
+                      data="images/icon-planning.svg"
+                      type="image/svg+xml"
+                    >
+                      Icon planning
+                    </object></span
+                  >
+                  Planning
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div id="company-dropdown-sidebar">
+              Company
+              <span>
+                <img
+                  class="company-arrow-down-sidebar"
+                  src="/images/icon-arrow-down.svg"
+                  alt="Arrow down"
+                />
+                <img
+                  class="display-none company-arrow-up-sidebar"
+                  src="/images/icon-arrow-up.svg"
+                  alt="Arrow up"
+                />
+              </span>
+              <div id="company-dropdown-sidebar-content">
+                <ul>
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="index.html">Careers</a></li>
+          <li><a href="index.html">About</a></li>
+        </ul>
+        <section class="sidebar-auth">
+          <a href="index.html">Login</a>
+          <a href="index.html" class="register">Register</a>
+        </section>
+      </div>
+    </aside>
+
     <header>
       <div class="logo-box">
         <img class="logo" src="/images/logo.svg" alt="logo" />
@@ -34,12 +139,12 @@
                 Features
                 <span>
                   <img
-                    class="arrow-down"
+                    class="features-arrow-down"
                     src="/images/icon-arrow-down.svg"
                     alt="Arrow down"
                   />
                   <img
-                    class="display-none arrow-up"
+                    class="display-none features-arrow-up"
                     src="/images/icon-arrow-up.svg"
                     alt="Arrow up"
                   />
@@ -51,43 +156,56 @@
               >
                 <ul>
                   <li>
-                    <span
-                      ><object data="images/icon-todo.svg" type="image/svg+xml">
-                        Icon todo
-                      </object></span
-                    >
-                    Todo list
+                    <a href="index.html">
+                      <span
+                        ><object
+                          data="images/icon-todo.svg"
+                          type="image/svg+xml"
+                        >
+                          Icon todo
+                        </object></span
+                      >
+                      Todo list
+                    </a>
                   </li>
                   <li>
-                    <span
-                      ><object
-                        data="images/icon-calendar.svg"
-                        type="image/svg+xml"
+                    <a href="index.html">
+                      <span
+                        ><object
+                          data="images/icon-calendar.svg"
+                          type="image/svg+xml"
+                        >
+                          Icon calendar
+                        </object></span
                       >
-                        Icon calendar
-                      </object></span
-                    >
-                    Calendar
+                      Calendar
+                    </a>
                   </li>
                   <li>
-                     <span
-                      ><object
-                        data="images/icon-reminders.svg"
-                        type="image/svg+xml"
+                    <a href="index.html">
+                      <span
+                        ><object
+                          data="images/icon-reminders.svg"
+                          type="image/svg+xml"
+                        >
+                          Icon reminders
+                        </object></span
                       >
-                        Icon reminders
-                      </object></span>
                       Reminders
+                    </a>
                   </li>
                   <li>
-                     <span
-                      ><object
-                        data="images/icon-planning.svg"
-                        type="image/svg+xml"
+                    <a href="index.html">
+                      <span
+                        ><object
+                          data="images/icon-planning.svg"
+                          type="image/svg+xml"
+                        >
+                          Icon planning
+                        </object></span
                       >
-                        Icon planning
-                      </object></span>
                       Planning
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -97,12 +215,12 @@
                 Company
                 <span>
                   <img
-                    class="arrow-down"
+                    class="company-arrow-down"
                     src="/images/icon-arrow-down.svg"
                     alt="Arrow down"
                   />
                   <img
-                    class="display-none arrow-up"
+                    class="display-none company-arrow-up"
                     src="/images/icon-arrow-up.svg"
                     alt="Arrow up"
                   />
@@ -113,9 +231,9 @@
                 class="dropdown-content display-none"
               >
                 <ul>
-                  <li>History</li>
-                  <li>Our Team</li>
-                  <li>Blog</li>
+                  <li><a href="index.html">History</a></li>
+                  <li><a href="index.html">Our Team</a></li>
+                  <li><a href="index.html">Blog</a></li>
                 </ul>
               </div>
             </li>
@@ -132,6 +250,11 @@
         <a href="index.html">Login</a>
         <a href="index.html" class="register">Register</a>
       </section>
+      <div>
+        <button id="menu-sidebar">
+          <img src="images/icon-menu.svg" alt="icon-menu" />
+        </button>
+      </div>
     </header>
     Make remote work Get your team in sync, no matter your location. Streamline
     processes, create team rituals, and watch productivity soar. Learn more
