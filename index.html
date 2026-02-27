@@ -32,7 +32,14 @@
       <div style="margin-top: 50px">
         <ul class="list-nav">
           <li>
-            <div id="features-dropdown-sidebar">
+            <div
+              id="features-dropdown-sidebar"
+              role="button"
+              aria-expanded="false"
+              aria-controls="dropdown-sidebar-content-features"
+              aria-haspopup="true"
+              tabindex="0"
+            >
               Features
               <span>
                 <img
@@ -47,7 +54,12 @@
                 />
               </span>
             </div>
-            <div id="dropdown-sidebar-content-features">
+            <div
+              id="dropdown-sidebar-content-features"
+              aria-hidden="true"
+              aria-labelledby="features-dropdown-sidebar"
+              role="region"
+            >
               <ul>
                 <li>
                   <span
@@ -94,7 +106,13 @@
             </div>
           </li>
           <li>
-            <div id="company-dropdown-sidebar">
+            <div
+              id="company-dropdown-sidebar"
+              role="button"
+              aria-expanded="false"
+              aria-controls="company-dropdown-sidebar-content"
+              aria-haspopup="true"
+            >
               Company
               <span>
                 <img
@@ -108,7 +126,12 @@
                   alt="Arrow up"
                 />
               </span>
-              <div id="company-dropdown-sidebar-content">
+              <div
+                id="company-dropdown-sidebar-content"
+                aria-hidden="true"
+                aria-labelledby="company-dropdown-sidebar"
+                role="region"
+              >
                 <ul>
                   <li>History</li>
                   <li>Our Team</li>
@@ -135,7 +158,15 @@
         <div>
           <ul class="list-nav">
             <li>
-              <div id="features-dropdown" class="dropdown">
+              <div
+                id="features-dropdown"
+                role="button"
+                tabindex="0"
+                class="dropdown"
+                aria-expanded="false"
+                aria-controls="features-dropdown-content"
+                aria-haspopup="true"
+              >
                 Features
                 <span>
                   <img
@@ -153,6 +184,9 @@
               <div
                 id="features-dropdown-content"
                 class="dropdown-content display-none"
+                aria-hidden="true"
+                role="region"
+                aria-labelledby="features-dropdown"
               >
                 <ul>
                   <li>
@@ -211,7 +245,14 @@
               </div>
             </li>
             <li>
-              <div id="company-dropdown" class="dropdown">
+              <div
+                id="company-dropdown"
+                class="dropdown"
+                role="button"
+                aria-expanded="false"
+                aria-controls="company-dropdown-content"
+                aria-haspopup="true"
+              >
                 Company
                 <span>
                   <img
@@ -229,6 +270,9 @@
               <div
                 id="company-dropdown-content"
                 class="dropdown-content display-none"
+                aria-hidden="true"
+                role="region"
+                aria-labelledby="company-dropdown"
               >
                 <ul>
                   <li><a href="index.html">History</a></li>
