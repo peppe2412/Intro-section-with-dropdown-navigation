@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: var(--gray-50);
   font-family: "Epilogue", sans-serif;
   margin: 0;
 }
@@ -138,7 +139,7 @@ li {
   .main-content-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
   }
 
@@ -158,7 +159,7 @@ li {
   .clients-box {
     display: flex;
     gap: 2rem;
-    padding-top: 9.5rem;
+    padding-top: 9rem;
   }
 
   .image-main-box {
